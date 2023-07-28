@@ -2,6 +2,7 @@ import os
 
 # for output which reports a local time
 os.environ['TZ'] = 'GMT'
+os.environ['LC_ALL'] = 'en_US.UTF-8'
 
 if os.environ.get('LC_ALL', '') != 'en_US.UTF-8':
     # this ensure we're in a utf-8 default filesystem encoding which is

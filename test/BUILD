@@ -8,3 +8,14 @@ py_test(
         "testdata"
     ]
 )
+
+py_test(
+    name = "python_magic_test",
+    srcs = ["python_magic_test.py"],
+    deps = [
+        "//magic:compat",
+    ],
+    data = [
+        "testdata"
+    ]
+)

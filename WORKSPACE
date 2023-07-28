@@ -11,7 +11,7 @@ http_archive(
         "./configure",
         "make",
         "make install",
-        "cp src/.libs/libmagic.dylib /usr/local/lib/libmagic.dylib"
+        "cp src/.libs/libmagic.dylib /usr/local/lib/libmagic.dylib",
     ],
     build_file_content = """
 cc_library(
