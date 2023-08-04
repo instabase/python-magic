@@ -1,3 +1,6 @@
+# Descripton of the repository
+This repository migrates python-magic and libmagic to Bazel in a single Bazel workspace, allowing any other Bazel workspace to consume python-magic as is without needing to install libmagic on the host machine.
+
 # python-magic
 [![PyPI version](https://badge.fury.io/py/python-magic.svg)](https://badge.fury.io/py/python-magic)
 [![Build Status](https://travis-ci.org/ahupp/python-magic.svg?branch=master)](https://travis-ci.org/ahupp/python-magic) [![Join the chat at https://gitter.im/ahupp/python-magic](https://badges.gitter.im/ahupp/python-magic.svg)](https://gitter.im/ahupp/python-magic?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
