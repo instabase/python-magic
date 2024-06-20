@@ -3,7 +3,7 @@ py_library(
     srcs = ["loader.py", "__init__.py"],
     imports = [".."],
     data = [
-        "@libmagic//:libmagic",
+        "//:libmagic",
     ],
     visibility = ["//visibility:public"],
 )

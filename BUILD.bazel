@@ -1,0 +1,18 @@
+package(default_visibility = ["//visibility:public"])
+
+genrule(
+    name = "libmagic",
+    outs = [
+		"libmagic.so.1.0.0",
+		"libmagic.so.1",
+		"libmagic.so",
+	],
+    srcs = ["@libmagic//:libmagic"],
+    cmd_bash = """
+n=$$(echo $(SRCS) | cut -d' ' -f2)
+cp $$(realpath $$n) $(RULEDIR)/libmagic.so.1.0.0
+cd $(RULEDIR)
+ln -s libmagic.so.1.0.0 libmagic.so.1
+ln -s libmagic.so.1.0.0 libmagic.so
+    """,
+)

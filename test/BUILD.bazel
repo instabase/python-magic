@@ -5,7 +5,7 @@ py_test(
         "//magic:compat",
     ],
     data = [
-        "testdata"
+        "testdata",
     ]
 )
 
@@ -16,6 +16,6 @@ py_test(
         "//magic:compat",
     ],
     data = [
-        "testdata"
+        "testdata",
     ]
 )

@@ -1,17 +1,7 @@
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
-
-http_archive(
-    name = "libmagic",
-    sha256 = "09c588dac9cff4baa054f51a36141793bcf64926edc909594111ceae60fce4ee",
-    strip_prefix = "file-5.31",
-    urls = [
-        "https://astron.com/pub/file/file-5.31.tar.gz",
-    ],
-	build_file = "//:libmagic.BUILD.bazel",
-	workspace_file = "//:libmagic.WORKSPACE",
-)
+workspace(name = "libmagic")
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
 http_archive(
     name = "rules_foreign_cc",
     sha256 = "476303bd0f1b04cc311fc258f1708a5f6ef82d3091e53fd1977fa20383425a6a",
