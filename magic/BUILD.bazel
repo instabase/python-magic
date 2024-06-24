@@ -4,7 +4,7 @@ py_library(
     imports = [".."],
     data = select({
         "@platforms//os:linux": ["//:libmagic_linux"],
-	"@platforms//os:osx": ["@libmagic_macos//:libmagic"],
+	"@platforms//os:osx": [], # does not support macos for hermetic(?) build 
     }),
     visibility = ["//visibility:public"],
 )
