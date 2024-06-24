@@ -23,7 +23,7 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     packages=['magic'],
     package_data={
-        'magic': ['py.typed', '*.pyi', '**/*.pyi'],
+        'magic': ['py.typed', '*.pyi', '**/*.pyi', '**/BUILD.bazel', 'WORKSPACE', 'libmagic.so*'],
     },
     keywords="mime magic file",
     license="MIT",

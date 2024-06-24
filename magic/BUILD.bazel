@@ -2,9 +2,10 @@ py_library(
     name = "loader",
     srcs = ["loader.py", "__init__.py"],
     imports = [".."],
-    data = [
-        "@libmagic//:libmagic",
-    ],
+    data = select({
+        "@platforms//os:linux": ["//:libmagic_linux"],
+	"@platforms//os:osx": [], # does not support macos for hermetic(?) build 
+    }),
     visibility = ["//visibility:public"],
 )
 
